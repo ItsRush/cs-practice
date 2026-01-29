@@ -35,4 +35,32 @@ namespace Studentska.Servis
             return null;
         }
     }
+
+    public class KorisnikServis
+    {
+        public Korisnik this[int index]
+        {
+            get { return InMemoryDb.tblKorisnici[index]; }
+            set { InMemoryDb.tblKorisnici[index] = value; }
+        }
+        public List<Korisnik> GetAll()
+        {
+            return InMemoryDb.GenerisiKorisnike();
+        }
+
+        public Korisnik Add(Korisnik noviKorisnik)
+        {
+            noviKorisnik.Id = InMemoryDb.tblKorisnici.Count + 1;
+            InMemoryDb.tblKorisnici.Add(noviKorisnik);
+            return noviKorisnik;
+        }
+
+        public Korisnik? GetByKorisnickoIme(string korisnik)
+        {
+            return InMemoryDb.tblKorisnici.Find(k => k.KorisnickoIme == korisnik);
+        }
+
+    }
 }
+
+
