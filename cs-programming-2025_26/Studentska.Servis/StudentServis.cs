@@ -45,7 +45,7 @@ namespace Studentska.Servis
         }
         public List<Korisnik> GetAll()
         {
-            return InMemoryDb.GenerisiKorisnike();
+            return InMemoryDb.tblKorisnici;
         }
 
         public Korisnik Add(Korisnik noviKorisnik)

@@ -46,7 +46,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(387, 69);
+            button1.Location = new Point(251, 22);
             button1.Name = "button1";
             button1.Size = new Size(119, 97);
             button1.TabIndex = 0;
@@ -55,7 +55,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(512, 69);
+            button2.Location = new Point(376, 22);
             button2.Name = "button2";
             button2.Size = new Size(119, 97);
             button2.TabIndex = 0;
@@ -64,7 +64,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(637, 69);
+            button3.Location = new Point(501, 22);
             button3.Name = "button3";
             button3.Size = new Size(119, 97);
             button3.TabIndex = 0;
@@ -73,7 +73,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(387, 172);
+            button4.Location = new Point(251, 125);
             button4.Name = "button4";
             button4.Size = new Size(119, 97);
             button4.TabIndex = 0;
@@ -82,7 +82,7 @@
             // 
             // button5
             // 
-            button5.Location = new Point(512, 172);
+            button5.Location = new Point(376, 125);
             button5.Name = "button5";
             button5.Size = new Size(119, 97);
             button5.TabIndex = 0;
@@ -91,7 +91,7 @@
             // 
             // button6
             // 
-            button6.Location = new Point(637, 172);
+            button6.Location = new Point(501, 125);
             button6.Name = "button6";
             button6.Size = new Size(119, 97);
             button6.TabIndex = 0;
@@ -100,7 +100,7 @@
             // 
             // button7
             // 
-            button7.Location = new Point(387, 275);
+            button7.Location = new Point(251, 228);
             button7.Name = "button7";
             button7.Size = new Size(119, 97);
             button7.TabIndex = 0;
@@ -109,7 +109,7 @@
             // 
             // button8
             // 
-            button8.Location = new Point(512, 275);
+            button8.Location = new Point(376, 228);
             button8.Name = "button8";
             button8.Size = new Size(119, 97);
             button8.TabIndex = 0;
@@ -118,7 +118,7 @@
             // 
             // button9
             // 
-            button9.Location = new Point(637, 275);
+            button9.Location = new Point(501, 228);
             button9.Name = "button9";
             button9.Size = new Size(119, 97);
             button9.TabIndex = 0;
@@ -128,7 +128,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(49, 69);
+            label1.Location = new Point(36, 28);
             label1.Name = "label1";
             label1.Size = new Size(55, 15);
             label1.TabIndex = 1;
@@ -138,7 +138,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(49, 104);
+            label2.Location = new Point(36, 63);
             label2.Name = "label2";
             label2.Size = new Size(57, 15);
             label2.TabIndex = 1;
@@ -147,7 +147,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(110, 69);
+            label3.Location = new Point(97, 28);
             label3.Name = "label3";
             label3.Size = new Size(38, 15);
             label3.TabIndex = 2;
@@ -157,7 +157,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(110, 104);
+            label4.Location = new Point(97, 63);
             label4.Name = "label4";
             label4.Size = new Size(38, 15);
             label4.TabIndex = 2;
@@ -167,7 +167,7 @@
             // btnReset
             // 
             btnReset.BackColor = SystemColors.ActiveCaption;
-            btnReset.Location = new Point(663, 399);
+            btnReset.Location = new Point(527, 331);
             btnReset.Name = "btnReset";
             btnReset.Size = new Size(93, 39);
             btnReset.TabIndex = 3;
@@ -179,7 +179,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(654, 375);
             Controls.Add(btnReset);
             Controls.Add(label4);
             Controls.Add(label3);

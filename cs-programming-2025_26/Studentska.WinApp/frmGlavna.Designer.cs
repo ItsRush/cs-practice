@@ -34,12 +34,15 @@
             krajRadaToolStripMenuItem = new ToolStripMenuItem();
             igreToolStripMenuItem = new ToolStripMenuItem();
             xOToolStripMenuItem = new ToolStripMenuItem();
+            korisniciToolStripMenuItem = new ToolStripMenuItem();
+            noviKorisnikToolStripMenuItem = new ToolStripMenuItem();
+            pretragaToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, igreToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, igreToolStripMenuItem, korisniciToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -56,14 +59,14 @@
             // odjavaToolStripMenuItem
             // 
             odjavaToolStripMenuItem.Name = "odjavaToolStripMenuItem";
-            odjavaToolStripMenuItem.Size = new Size(180, 22);
+            odjavaToolStripMenuItem.Size = new Size(120, 22);
             odjavaToolStripMenuItem.Text = "Odjava";
             odjavaToolStripMenuItem.Click += odjavaToolStripMenuItem_Click;
             // 
             // krajRadaToolStripMenuItem
             // 
             krajRadaToolStripMenuItem.Name = "krajRadaToolStripMenuItem";
-            krajRadaToolStripMenuItem.Size = new Size(180, 22);
+            krajRadaToolStripMenuItem.Size = new Size(120, 22);
             krajRadaToolStripMenuItem.Text = "Kraj rada";
             krajRadaToolStripMenuItem.Click += krajRadaToolStripMenuItem_Click;
             // 
@@ -77,9 +80,29 @@
             // xOToolStripMenuItem
             // 
             xOToolStripMenuItem.Name = "xOToolStripMenuItem";
-            xOToolStripMenuItem.Size = new Size(90, 22);
+            xOToolStripMenuItem.Size = new Size(180, 22);
             xOToolStripMenuItem.Text = "XO";
             xOToolStripMenuItem.Click += xOToolStripMenuItem_Click;
+            // 
+            // korisniciToolStripMenuItem
+            // 
+            korisniciToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { noviKorisnikToolStripMenuItem, pretragaToolStripMenuItem });
+            korisniciToolStripMenuItem.Name = "korisniciToolStripMenuItem";
+            korisniciToolStripMenuItem.Size = new Size(64, 20);
+            korisniciToolStripMenuItem.Text = "Korisnici";
+            // 
+            // noviKorisnikToolStripMenuItem
+            // 
+            noviKorisnikToolStripMenuItem.Name = "noviKorisnikToolStripMenuItem";
+            noviKorisnikToolStripMenuItem.Size = new Size(180, 22);
+            noviKorisnikToolStripMenuItem.Text = "Novi korisnik";
+            // 
+            // pretragaToolStripMenuItem
+            // 
+            pretragaToolStripMenuItem.Name = "pretragaToolStripMenuItem";
+            pretragaToolStripMenuItem.Size = new Size(180, 22);
+            pretragaToolStripMenuItem.Text = "Pretraga";
+            pretragaToolStripMenuItem.Click += pretragaToolStripMenuItem_Click;
             // 
             // frmGlavna
             // 
@@ -87,6 +110,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(menuStrip1);
+            IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
             Name = "frmGlavna";
             Text = "frmGlavna";
@@ -104,5 +128,8 @@
         private ToolStripMenuItem xOToolStripMenuItem;
         private ToolStripMenuItem odjavaToolStripMenuItem;
         private ToolStripMenuItem krajRadaToolStripMenuItem;
+        private ToolStripMenuItem korisniciToolStripMenuItem;
+        private ToolStripMenuItem noviKorisnikToolStripMenuItem;
+        private ToolStripMenuItem pretragaToolStripMenuItem;
     }
 }

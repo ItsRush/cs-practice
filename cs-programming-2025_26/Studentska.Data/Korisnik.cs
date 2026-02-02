@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,7 +18,8 @@ namespace Studentska.Data
 
         public bool Aktivan {  get; set; }
 
-        public Korisnik(string ime = "", string prezime = "", string korisnickoIme = "", DateTime datumRodjenja =  default(DateTime), string lozinka = "", bool aktivan = true)
+        public Image? Slika { get; set; }
+        public Korisnik(string ime = "", string prezime = "", string korisnickoIme = "", DateTime datumRodjenja =  default(DateTime), string lozinka = "", bool aktivan = true, Image ? slika = null)
         {
             Ime = ime;
             Prezime = prezime;
@@ -25,6 +27,7 @@ namespace Studentska.Data
             DatumRodjenja = datumRodjenja;
             Lozinka = lozinka;
             Aktivan = aktivan;
+            Slika = slika;
         }
         public override string ToString()
         {
